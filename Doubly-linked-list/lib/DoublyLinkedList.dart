@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'Node.dart';
 
@@ -10,10 +9,7 @@ class DoublyLinkedList {
     Node newNode = Node(data: headData);
     this.head = newNode;
     this.tail = newNode;
-    this.head.nextNode = null;
-    this.head.prevNode = null;
-    this.tail.nextNode = null;
-    this.tail.prevNode = null;
+    
   }
 
   void insertAtFirst(dynamic data) {
